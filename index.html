@@ -1,93 +1,235 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria Biard | Portfolio</title>
-
+    <title>Victoria Biard</title>
+ 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Police -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+ 
+    <style>
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card a:hover .card {
+            transform: translateY(-12px);
+        }
+        a.card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        a.card-link .card {
+            height: 100%;
+        }
+    </style>
 </head>
-
+ 
 <body>
-
-    <!-- Barre du haut -->
-    <header class="navbar">
-
+ 
+    <header>
+ 
         <div class="logo">
             Victoria Biard
         </div>
-
+ 
         <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="#apropos">À propos</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#projets">Projets</a>
         </nav>
-
+ 
+        <a href="#contact" class="btn-contact">
+            Contact
+        </a>
+ 
     </header>
-
-    <!-- Fond -->
-    <div class="background"></div>
-
-    <!-- Contenu -->
-    <main class="container">
-
-        <!-- Grande carte -->
-        <section class="main-card">
-
-            <div class="photo">
-                <img src="photo.jpg" alt="Victoria Biard">
+ 
+    <section class="hero">
+ 
+        <h1>
+            Victoria
+        </h1>
+ 
+        <img src="Image/IMG-20260605-WA0004~2.jpg"
+             alt="travail créatif"
+             class="hero-img">
+ 
+        <p class="intro">
+ 
+            Étudiante en communication à l'EFAP Bordeaux.
+ 
+            Créative, curieuse et passionnée par la communication,
+            j'aime donner vie aux idées à travers des projets concrets,
+            des événements et des expériences humaines.
+ 
+        </p>
+ 
+    </section>
+ 
+    <section class="image-section">
+ 
+        <img src="images/victoria.jpg" alt="Victoria">
+ 
+    </section>
+ 
+    <section id="projets" class="projects">
+ 
+        <h2>Projets</h2>
+ 
+        <div class="grid">
+ 
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800">
+                <h3>Projet 01</h3>
+                <p>Restaurant fictif</p>
             </div>
-
-            <h1>Victoria Biard</h1>
-
+ 
+            <a class="card-link" href="https://canva.link/k7vqahmjdyv5y0c" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800">
+                    <h3>Projet 02</h3>
+                    <p>Bliss Festival</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/uluo7dexc4enkcc" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800">
+                    <h3>Projet 03</h3>
+                    <p>Événement fictif</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/jce43n4rsyhvsbl" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=800">
+                    <h3>Projet 04</h3>
+                    <p>Application fictive</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/h5yr4uyqhsjitdf" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800">
+                    <h3>Projet 05</h3>
+                    <p>Affiche de film</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/n6ogsbj2kw5likw" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=800">
+                    <h3>Projet 06</h3>
+                    <p>Campagne de sensibilisation</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/bvmtedsu56iv3u3" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=800">
+                    <h3>Projet 07</h3>
+                    <p>Communication de marque</p>
+                </div>
+            </a>
+ 
+            <a class="card-link" href="https://canva.link/jiknoc5fb972e9z" target="_blank" rel="noopener noreferrer">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800">
+                    <h3>Projet 08</h3>
+                    <p>Stage McDonald's</p>
+                </div>
+            </a>
+ 
+        </div>
+ 
+    </section>
+ 
+    <section id="apropos" class="content">
+ 
+        <div class="left">
+            <h2>À propos</h2>
+        </div>
+ 
+        <div class="right">
+ 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Je m'appelle Victoria Biard, née à Bordeaux.
+ 
+                Je suis créative, optimiste, persévérante et curieuse.
+ 
+                J'accorde beaucoup d'importance à la solidarité,
+                à la bienveillance, à l'écoute et à l'honnêteté.
             </p>
-
-            <button>Découvrir</button>
-
-        </section>
-
-        <!-- Petits cadres -->
-        <section class="cards">
-
-            <div class="card">
-                <h2>Lorem</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Ipsum</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Dolor</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Contact</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-
-        </section>
-
-    </main>
-
+ 
+        </div>
+ 
+    </section>
+ 
+    <section id="parcours" class="timeline">
+ 
+        <h2>Mon parcours</h2>
+ 
+        <div class="timeline-item">
+            <span>2010 — 2013</span>
+            <h3>St Genès Bordeaux</h3>
+            <p>Premières années scolaires marquées par l'apprentissage et le développement personnel.</p>
+        </div>
+ 
+        <div class="timeline-item">
+            <span>2013 — 2024</span>
+            <h3>Albert Le Grand</h3>
+            <p>Une période qui m'a permis de construire mon projet professionnel et de développer de nombreuses compétences.</p>
+        </div>
+ 
+        <div class="timeline-item">
+            <span>2024 — Aujourd'hui</span>
+            <h3>EFAP Bordeaux</h3>
+            <p>Formation en communication, événementiel, marketing et création de contenu.</p>
+        </div>
+ 
+    </section>
+ 
+    <section class="skills">
+ 
+        <h2>Compétences</h2>
+ 
+        <div class="skills-grid">
+ 
+            <span>Communication</span>
+            <span>Créativité</span>
+            <span>Événementiel</span>
+            <span>Organisation</span>
+            <span>Marketing</span>
+            <span>Relations humaines</span>
+            <span>Création de contenu</span>
+            <span>Travail d'équipe</span>
+ 
+        </div>
+ 
+    </section>
+ 
+    <section id="contact" class="contact">
+ 
+        <h2>Travaillons ensemble.</h2>
+ 
+        <p>
+            Je suis toujours ouverte à de nouvelles opportunités
+            et collaborations créatives.
+        </p>
+ 
+        <a href="tel:0749898440">
+            07 49 89 84 40
+        </a>
+ 
+    </section>
+ 
 </body>
+ 
 </html>
